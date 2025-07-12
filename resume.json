@@ -1,15 +1,15 @@
 {
   "basics": {
     "name": "Gaurav Bansal",
-    "label": "Co-founder @ Jio Tesseract | Director of Engineering",
+    "label": "Tech Co-founder & CTO",
     "image": "",
     "email": "me@bgaurav.in",
-    "phone": "",
+    "phone": "(555) 123-4567",
     "url": "https://bgaurav.in",
-    "summary": "Engineering leader with over a decade of experience building AI-powered, scalable systems at the intersection of Artificial Intelligence, Mixed Reality (XR), and cloud infrastructure. As Director of Engineering and Co-founder of Jio Tesseract, I lead cross-functional teams delivering real-time platforms for immersive experiences and intelligent interaction. My expertise spans Generative AI, Machine Learning, Computer Vision, and full-stack product development across Web, Android, and iOS. I focus on technical strategy, team building, and agile product execution — helping shape products like JioGlass, JioImmerse, and JioDive while driving innovation in the AI and XR ecosystem.",
+    "summary": "Innovative tech leader with 12+ years of experience building scalable products at the intersection of AI, cloud computing, and enterprise software. As Co-founder and CTO of TechNova, I lead engineering teams developing cutting-edge solutions that transform how businesses leverage data and automation. My expertise spans distributed systems, machine learning operations, and full-stack development with a focus on creating resilient architectures that scale seamlessly with business growth.",
     "location": {
-      "address": "",
-      "postalCode": "",
+      "address": "123 Innovation Drive",
+      "postalCode": "400001",
       "city": "Mumbai",
       "countryCode": "IN",
       "region": "Maharashtra"
@@ -29,102 +29,147 @@
   },
   "work": [
     {
-      "name": "Jio Tesseract",
-      "position": "Director of Engineering",
-      "url": "https://tesseract.in",
-      "startDate": "2024-07-01",
+      "name": "TechNova",
+      "position": "Co-founder & CTO",
+      "url": "https://technova.example.com",
+      "startDate": "2019-06-01",
       "endDate": "",
-      "summary": "Leading engineering teams building intelligent, scalable systems at the intersection of artificial intelligence, mixed reality (XR), and cloud infrastructure.",
+      "summary": "Co-founded TechNova to revolutionize enterprise data management through AI-powered automation and analytics. Lead all technical strategy, architecture decisions, and engineering teams.",
       "highlights": [
-        "Lead cross-functional teams developing AI-driven XR platforms and products",
-        "Drive technical strategy and architecture for next-generation immersive experiences",
-        "Oversee product engineering execution across multiple product lines",
-        "Mentor engineering leaders and establish technical best practices"
+        "Built and scaled engineering team from 3 to 45 across 4 countries",
+        "Architected cloud-native platform processing 10TB+ data daily with 99.99% uptime",
+        "Secured $12M Series A funding based on technical innovation and product-market fit",
+        "Implemented ML Ops pipeline reducing model deployment time from weeks to hours"
       ]
     },
     {
-      "name": "Jio Tesseract",
-      "position": "Director of Software Engineering",
-      "url": "https://tesseract.in",
-      "startDate": "2022-04-01",
-      "endDate": "2024-07-01",
-      "summary": "Led software development for Jio's XR platform, focusing on scalable architecture, team building, and product delivery.",
+      "name": "DataSphere",
+      "position": "VP of Engineering",
+      "url": "https://datasphere.example.com",
+      "startDate": "2016-03-01",
+      "endDate": "2019-05-01",
+      "summary": "Led engineering for enterprise data platform serving Fortune 500 clients, focusing on scalable architecture and performance optimization.",
       "highlights": [
-        "Led development of Jio Immerse, a powerful XR platform that transforms smartphones into hubs for immersive experiences",
-        "Engineered Jio Glass, state-of-the-art mixed reality smart glasses for immersive media consumption",
-        "Developed Jio Dive, an affordable smartphone-powered VR headset bringing immersive experiences to the masses",
-        "Created Holoboard, an affordable AR headset for productivity and remote collaboration",
-        "Designed Quark, a compact 360-degree camera for capturing and livestreaming immersive content"
+        "Managed team of 25 engineers across backend, frontend, and DevOps",
+        "Redesigned core data processing pipeline improving throughput by 300%",
+        "Implemented microservices architecture reducing deployment failures by 78%",
+        "Established SRE practices resulting in 99.95% platform availability"
       ]
     },
     {
-      "name": "Jio Tesseract",
-      "position": "Chief Software Architect",
-      "url": "https://tesseract.in",
-      "startDate": "2016-01-01",
-      "endDate": "2022-04-01",
-      "summary": "Designed and implemented core software architecture for XR platforms and applications, establishing technical foundations for the company's product ecosystem.",
+      "name": "CloudMatrix",
+      "position": "Senior Software Engineer",
+      "url": "https://cloudmatrix.example.com",
+      "startDate": "2013-01-01",
+      "endDate": "2016-02-01",
+      "summary": "Developed distributed systems for cloud infrastructure management and monitoring.",
       "highlights": [
-        "Architected scalable software systems for mixed reality applications",
-        "Established technical standards and development practices",
-        "Led integration of AI/ML capabilities into XR platforms",
-        "Built foundational components for cross-platform XR development"
+        "Built real-time monitoring system for multi-region cloud deployments",
+        "Implemented fault-tolerant message queue handling 50K+ messages per second",
+        "Developed automated scaling algorithms reducing cloud costs by 35%",
+        "Created developer SDK adopted by 200+ enterprise customers"
       ]
     }
   ],
-  "volunteer": [],
+  "volunteer": [
+    {
+      "organization": "Code For Change",
+      "position": "Technical Mentor",
+      "url": "https://codeforchange.example.org",
+      "startDate": "2020-01-01",
+      "endDate": "",
+      "summary": "Mentor aspiring developers from underrepresented communities, providing technical guidance and career advice.",
+      "highlights": [
+        "Conducted monthly workshops on cloud architecture and system design",
+        "Mentored 15+ junior developers who secured roles at top tech companies",
+        "Developed open-source curriculum for backend development fundamentals"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "Indian Institute of Information Technology, Allahabad",
-      "url": "",
-      "area": "Information Technology",
-      "studyType": "Bachelor of Technology (B.Tech.)",
-      "startDate": "2012-08-01",
-      "endDate": "2016-05-01",
-      "score": "",
+      "institution": "Stanford University",
+      "url": "https://stanford.edu",
+      "area": "Computer Science",
+      "studyType": "Master of Science (M.S.)",
+      "startDate": "2010-09-01",
+      "endDate": "2012-06-01",
+      "score": "3.9",
       "courses": [
-        "Advanced Algorithms",
-        "Operating Systems",
+        "Distributed Systems",
         "Machine Learning",
+        "Database Systems",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "institution": "Indian Institute of Technology, Mumbai",
+      "url": "https://iitb.ac.in",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Technology (B.Tech.)",
+      "startDate": "2006-08-01",
+      "endDate": "2010-05-01",
+      "score": "9.2/10",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Operating Systems",
+        "Computer Networks",
         "Software Engineering"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Startup Acquisition",
-      "date": "2019-05-01",
-      "awarder": "Reliance Jio",
-      "summary": "Successfully built and exited a hardware-software XR startup."
+      "title": "Technology Innovator of the Year",
+      "date": "2023-11-01",
+      "awarder": "Tech Founders Association",
+      "summary": "Recognized for pioneering work in enterprise data automation and ML Ops."
+    },
+    {
+      "title": "Best Enterprise SaaS Platform",
+      "date": "2022-05-01",
+      "awarder": "Cloud Computing Awards",
+      "summary": "TechNova's data platform recognized for innovation, scalability, and business impact."
     }
   ],
-  "certificates": [],
-  "publications": [],
+  "certificates": [
+    {
+      "name": "AWS Solutions Architect - Professional",
+      "date": "2021-06-15",
+      "issuer": "Amazon Web Services",
+      "url": "https://aws.amazon.com/certification"
+    },
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "date": "2020-03-10",
+      "issuer": "Google Cloud",
+      "url": "https://cloud.google.com/certification"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Scalable ML Pipelines for Enterprise: Lessons from the Trenches",
+      "publisher": "ACM Digital Library",
+      "releaseDate": "2022-09-01",
+      "url": "https://dl.acm.org/example",
+      "summary": "Research paper detailing best practices for implementing production ML pipelines in enterprise environments."
+    }
+  ],
   "skills": [
     {
       "name": "Engineering Leadership",
       "level": "Advanced",
-      "keywords": ["Team Building", "Technical Strategy", "Cross-functional Leadership", "Product Engineering", "Agile Execution"]
-    },
-    {
-      "name": "XR Development",
-      "level": "Advanced",
-      "keywords": ["Mixed Reality", "AR/VR", "3D Interactions", "Immersive UX", "XR Platforms"]
+      "keywords": ["Team Building", "Technical Strategy", "Product Vision", "Agile Methodologies", "Talent Development"]
     },
     {
       "name": "AI & Machine Learning",
       "level": "Advanced",
-      "keywords": ["Generative AI", "Computer Vision", "LLMs (Large Language Models)", "Voice AI", "Real-time Inference"]
+      "keywords": ["MLOps", "TensorFlow", "PyTorch", "Feature Engineering", "Model Deployment"]
     },
     {
       "name": "System Design",
-      "level": "Advanced",
-      "keywords": ["Distributed Systems", "Scalable Architecture", "Performance Optimization", "Cloud Infrastructure"]
-    },
-    {
-      "name": "Full-Stack Development",
-      "level": "Advanced",
-      "keywords": ["Web", "Android", "iOS", "React", "Node.js", "Python", "ReactNative"]
+      "level": "Expert",
+      "keywords": ["Distributed Systems", "Scalable Architecture", "High Availability", "Fault Tolerance"]
     }
   ],
   "languages": [
@@ -135,71 +180,71 @@
     {
       "language": "Hindi",
       "fluency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
     }
   ],
   "interests": [
     {
-      "name": "Deep Tech",
-      "keywords": ["Self-hosting", "Voice AI", "Edge AI", "Human-Computer Interaction", "LLM Evaluation"]
+      "name": "Open Source",
+      "keywords": ["Contributor", "Maintainer", "Community Building", "Hackathons"]
     },
     {
-      "name": "Innovation & Design",
-      "keywords": ["User Experience", "Product Design", "Creative Problem Solving"]
+      "name": "Technology Trends",
+      "keywords": ["Edge Computing", "Quantum Computing", "Sustainable Tech", "Web3"]
     },
     {
-      "name": "Travel & Culture",
-      "keywords": ["Istanbul", "Japan", "Europe", "Global Cuisine", "Cultural Exploration"]
+      "name": "Travel & Adventure",
+      "keywords": ["Hiking", "Photography", "Cultural Immersion", "Digital Nomad"]
     }
   ],
-  "references": [],
+  "references": [
+    {
+      "name": "Sarah Chen",
+      "reference": "Gaurav is an exceptional technical leader who combines deep engineering expertise with strategic vision. His ability to translate complex business requirements into elegant technical solutions has been instrumental to our company's growth."
+    }
+  ],
   "projects": [
     {
-      "name": "JioImmerse",
-      "startDate": "2021-06-01",
+      "name": "DataFlow",
+      "startDate": "2021-03-01",
       "endDate": "",
-      "description": "A powerful XR platform that runs seamlessly on any smartphone, transforming it into a hub for immersive experiences. It serves as a unified micro-OS, integrating a launcher, App Store, and comprehensive Mixed Reality APIs within a single application.",
+      "description": "TechNova's flagship enterprise data platform that enables real-time data processing, analytics, and ML model deployment with minimal engineering overhead.",
       "highlights": [
-        "Designed to power a diverse XR device ecosystem",
-        "Enables seamless compatibility across various headsets and smart glasses",
-        "All-in-one solution for AR, VR, and MR applications"
+        "Processes over 10TB of data daily with sub-second latency",
+        "Supports 500+ concurrent enterprise users with 99.99% uptime",
+        "Reduced data pipeline development time by 70% through no-code interfaces",
+        "Integrated with all major cloud providers and data warehouses"
       ],
-      "url": "https://play.google.com/store/apps/details?id=com.jiotesseract.mr.jxr"
+      "url": "https://technova.example.com/dataflow"
     },
     {
-      "name": "JioGlass",
-      "startDate": "2019-06-01",
-      "endDate": "",
-      "description": "State-of-the-art, lightweight mixed reality smart glass designed for an immersive media consumption experience and beyond. Whether for entertainment, remote collaboration, or enhanced learning, JioGlass offers high-resolution displays, 3D holographic interactions, and seamless connectivity.",
+      "name": "AutoML Engine",
+      "startDate": "2020-01-01",
+      "endDate": "2021-02-01",
+      "description": "An open-source framework for automated machine learning model selection, training, and deployment that democratizes AI for organizations without dedicated data science teams.",
       "highlights": [
-        "High-resolution displays for immersive viewing",
-        "3D holographic interactions for intuitive control",
-        "Engineered for comfort and extended usage"
+        "5,000+ GitHub stars and 50+ contributors",
+        "Supports classification, regression, and time-series forecasting",
+        "Automated feature engineering and hyperparameter optimization",
+        "One-click deployment to production environments"
       ],
-      "url": "https://tesseract.in/jiodive/"
+      "url": "https://github.com/technova/automl-engine"
     },
     {
-      "name": "JioDive",
-      "startDate": "2022-02-01",
-      "endDate": "2022-08-01",
-      "description": "An affordable smartphone-powered VR headset that brings immersive experiences to the masses. With support for 360-degree videos, interactive VR gaming, and educational content, JioDive transforms any compatible smartphone into a gateway to virtual reality.",
+      "name": "CloudGuard",
+      "startDate": "2018-06-01",
+      "endDate": "2019-12-01",
+      "description": "Security and compliance automation platform for multi-cloud environments that continuously monitors infrastructure for vulnerabilities and configuration drift.",
       "highlights": [
-        "Support for 360-degree videos and interactive content",
-        "Compatible with most modern smartphones",
-        "Designed for accessibility and ease of use"
+        "Reduced security incident response time from days to minutes",
+        "Automated remediation for 80% of common security findings",
+        "Comprehensive compliance reporting for SOC2, HIPAA, and GDPR",
+        "Seamless integration with CI/CD pipelines"
       ],
-      "url": "https://tesseract.in/jiodive/"
-    },
-    {
-      "name": "Jarvis Voice-to-Voice AI Home Assistant Engine",
-      "startDate": "2024-09-01",
-      "endDate": "",
-      "description": "Jarvis is a locally hosted voice-to-voice AI engine for home automation, enabling real-time, private, and intelligent conversations using high-performance GPU inference. It combines Large Language Models (LLMs) and speech pipelines to offer fully offline, low-latency interaction with IoT devices.",
-      "highlights": [
-        "Real-time voice interaction powered by NVIDIA H100",
-        "Fully offline AI processing with vLLM, LLaMA and Whisper pipelines",
-        "Modular architecture with built-in IoT device control"
-      ],
-      "url": ""
+      "url": "https://cloudguard.example.com"
     }
   ]
 }
