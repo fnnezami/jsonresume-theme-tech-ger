@@ -76,7 +76,7 @@
 			<div class="jobBlock">
 	      <div class='blockHeader'>
 	        <span class='title'>
-	          {{#if name}}{{#if url}}<a href='{{url}}'>{{name}} - <em>{{position}}</em>{{#if location}}, {{location}}{{/if}}</a>{{else}}{{name}} - <em>{{position}}</em>{{#if location}}, {{location}}{{/if}}{{/if}}{{/if}}
+	          {{#if position}}{{#if url}}<a href='{{url}}'>{{position}} - <em>{{name}}</em>{{#if location}}, {{location}}{{/if}}</a>{{else}}{{position}} - <em>{{name}}</em>{{#if location}}, {{location}}{{/if}}{{/if}}{{/if}}
 	        </span>
 	        {{#if startDate}}
 	        <span class='date'>
