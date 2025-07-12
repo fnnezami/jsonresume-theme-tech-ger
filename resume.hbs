@@ -14,9 +14,9 @@
 	</head>
 	<body>
 
-	<div id='resume'>
+	<div class='resume'>
 	{{#resume.basics}}
-  <div id='nameBlock' class='largeFont'>
+  <div class='nameBlock'>
     <span class='name'>
       {{name}}
     </span>
@@ -24,7 +24,7 @@
     <div class='label'>{{label}}</div>
     {{/if}}
   </div>
-  <div id='basicsBlock' class='smallFont'>
+  <div class='basicsBlock'>
     <div class='contactBlock'>
       {{#location}}
         {{#if address}}{{address}}{{/if}}{{#if city}}{{#if address}} • {{/if}}{{city}}{{/if}}{{#if region}}{{#if city}}, {{/if}}{{region}}{{/if}} {{#if postalCode}}{{postalCode}}{{/if}}
@@ -39,7 +39,7 @@
       {{/if}}
     </div>
     {{#if profiles.length}}
-      <div id='profilesBlock'>
+      <div class='profilesBlock'>
         {{#each profiles}}
           {{#if url}}
             <span class='url'>
@@ -54,7 +54,7 @@
 	{{/resume.basics}}
 
   {{#if resume.basics.summary}}
-  <div id='summaryBlock'>
+  <div class='summaryBlock'>
     <div class='sectionName'>
       <span>SUMMARY</span>
     </div>
@@ -66,7 +66,7 @@
   {{/if}}
 
 	{{#if resume.work.length}}
-  <div id='workBlock'>
+  <div class='workBlock'>
     <div class='sectionName'>
       <span>EXPERIENCE</span>
     </div>
@@ -107,7 +107,7 @@
 	{{/if}}
 
   {{#if resume.projects.length}}
-  <div id='projects'>
+  <div class='projects'>
     <div class='sectionName'>
       <span>PROJECTS</span>
     </div>
@@ -143,7 +143,7 @@
   {{/if}}
 
 	{{#if resume.education.length}}
-	<div id='education'>
+	<div class='education'>
     <div class='sectionName'>
       <span>EDUCATION</span>
     </div>
@@ -167,7 +167,7 @@
         </div>
         {{/if}}
         {{#if courses.length}}
-        <div id='coursesBlock'>
+        <div class='coursesBlock'>
           {{#each courses}}
           <ul class='coursesList'>
             {{#each .}}
@@ -185,7 +185,7 @@
 	{{/if}}
 
 	{{#if resume.publications.length}}
-	<div id='publications'>
+	<div class='publications'>
     <div class='sectionName'>
       <span>PUBLICATIONS</span>
     </div>
@@ -218,7 +218,7 @@
 	{{/if}}
 
 	{{#if resume.awards.length}}
-	<div id='awards'>
+	<div class='awards'>
     <div class='sectionName'>
       <span>AWARDS</span>
     </div>
@@ -251,7 +251,7 @@
 	{{/if}}
 
 	{{#if resume.volunteer.length}}
-	<div id='volunteer'>
+	<div class='volunteer'>
     <div class='sectionName'>
       <span>VOLUNTEERING</span>
     </div>
@@ -286,7 +286,7 @@
 	{{/if}}
 
 	{{#if resume.skills.length}}
-	<div id='skills'>
+	<div class='skills'>
     <div class='sectionName'>
       <span>SKILLS</span>
     </div>
@@ -316,7 +316,7 @@
 	{{/if}}
 
   {{#if resume.certificates.length}}
-  <div id='certificates'>
+  <div class='certificates'>
     <div class='sectionName'>
       <span>CERTIFICATIONS</span>
     </div>
@@ -340,7 +340,7 @@
   {{/if}}
 
 	{{#if resume.languages.length}}
-	<div id='languages'>
+	<div class='languages'>
     <div class='sectionName'>
       <span>LANGUAGES</span>
     </div>
@@ -360,7 +360,7 @@
   {{/if}}
 
 	{{#if resume.interests.length}}
-	<div id='interests'>
+	<div class='interests'>
     <div class='sectionName'>
       <span>INTERESTS</span>
     </div>
@@ -385,7 +385,7 @@
   {{/if}}
 
   {{#if resume.references.length}}
-  <div id='references'>
+  <div class='references'>
     <div class='sectionName'>
       <span>REFERENCES</span>
     </div>

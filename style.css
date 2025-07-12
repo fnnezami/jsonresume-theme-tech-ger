@@ -26,10 +26,16 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2077b2;
 }
 
 /* Resume container */
-#resume {
+.resume {
   margin: 0 auto;
   max-width: 800px;
   padding: 40px 60px;
@@ -60,12 +66,12 @@ a {
 }
 
 /* Add spacing after each section except the last one */
-#resume > div:not(:last-child) {
+.resume > div:not(:last-child) {
   margin-bottom: 15px;
 }
 
 /* Common block elements */
-.jobBlock, .projectBlock, .educationBlock, .certificateBlock, .skillBlock, .publicationBlock, .awardBlock, .volunteerBlock, .languageBlock, .interestBlock {
+.sectionContent > div {
   page-break-inside: avoid;
   margin-bottom: 4px;
 }
@@ -78,16 +84,6 @@ a {
 .title {
   font-weight: bold;
   font-size: 12px;
-}
-
-.title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.title a:hover {
-  text-decoration: underline;
-  color: #2077b2;
 }
 
 .date {
@@ -106,15 +102,6 @@ a {
   font-weight: 500;
 }
 
-.website a {
-  color: #2077b2;
-  text-decoration: none;
-}
-
-.website a:hover {
-  text-decoration: underline;
-}
-
 .summary {
   margin-top: 2px;
   margin-bottom: 4px;
@@ -129,14 +116,8 @@ a {
   list-style-type: disc;
 }
 
-.skillList, .skillDetails {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.skillList li, .skillDetails li {
+/* Skill lists - special case for inline display */
+.skillBlock ul li {
   display: inline-block;
   margin-right: 12px;
   margin-bottom: 1px;
@@ -155,22 +136,8 @@ a {
   margin-right: 5px;
 }
 
-/* Special elements */
-.coursesList {
-  width: 28%;
-  vertical-align: top;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 15px;
-}
-
-.course {
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-
-.largeFont {
+/* Header elements */
+.nameBlock {
   font-size: 22px;
   text-align: center;
   margin-bottom: 0;
@@ -185,20 +152,35 @@ a {
   margin-bottom: 0;
 }
 
-.smallFont {
+.basicsBlock {
   font-size: 12px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
+/* Education elements */
+.coursesBlock {
+  margin-top: 2px;
+}
+
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.course {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
 .gpa {
   margin-bottom: 5px;
   font-size: 11px;
-}
-
-.jobBlock {
-  page-break-inside: avoid;
 }
 
 /* Media Queries */
@@ -207,14 +189,11 @@ a {
     margin: 0;
     font-size: 14px;
   }
-  #resume {
+  .resume {
     margin: 0 auto;
     max-width: 600px;
     padding: 0.5em 1em;
     border: none;
-  }
-  .sectionBlock {
-    flex-direction: column;
   }
   .sectionContent {
     width: 100%;
@@ -225,10 +204,10 @@ a {
   .sectionName {
     width: auto;
   }
-  .largeFont {
+  .nameBlock {
     font-size: 20px;
   }
-  .smallFont {
+  .basicsBlock {
     font-size: 14px;
   }
 }
@@ -237,7 +216,7 @@ a {
   body {
     background: #FFFFFF;
   }
-  #resume {
+  .resume {
     margin: 0 auto;
     max-width: 600px;
     padding: 0px 0px;
