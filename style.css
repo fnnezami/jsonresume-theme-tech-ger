@@ -1,11 +1,13 @@
 body {
   background: #EEEEEE;
-  font: 13px "Times New Roman", Times, sans-serif;
+  font: 12px "Times New Roman", Times, serif;
   line-height: 1.4;
   margin: 40px 0;
+  color: #000;
 }
 em {
-  color: #999;
+  color: #333;
+  font-style: italic;
 }
 p {
   line-height: 1.4;
@@ -22,8 +24,8 @@ a {
 
 #resume {
   margin: 0 auto;
-  max-width: 600px;
-  padding: 80px 100px;
+  max-width: 800px;
+  padding: 40px 60px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px #aaa;
@@ -37,11 +39,15 @@ a {
 }
 
 .largeFont {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .smallFont {
-  font-size: 13px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .sectionBlock {
@@ -53,6 +59,9 @@ a {
   width: 18%;
   vertical-align: top;
   display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
 }
 
 .sectionContent {
@@ -64,15 +73,17 @@ a {
 .sectionContent ul {
   padding-left: 20px;
   margin-top: 6px;
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 .sectionContent .title {
   font-weight: bold;
+  font-size: 12px;
 }
 
 .sectionContent .date {
   float: right;
+  font-weight: normal;
 }
 
 .sectionContent .separator {
@@ -80,9 +91,9 @@ a {
 }
 
 .sectionLine {
-  border-style: dashed;
+  border-style: solid;
   border-width: 1px;
-  border-color: #CFCFCF;
+  border-color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -98,7 +109,39 @@ a {
 }
 
 .skillBlock {
+  margin-bottom: 10px;
+}
+
+.skillList, .skillDetails {
+  margin-top: 2px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.skillList li, .skillDetails li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.position {
+  margin-top: 2px;
   margin-bottom: 4px;
+}
+
+.website {
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.degree {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.gpa {
+  margin-bottom: 5px;
+  font-size: 11px;
 }
 
 .jobBlock {

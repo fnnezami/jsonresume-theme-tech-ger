@@ -1,21 +1,22 @@
 {
-  "name": "jsonresume-theme-onepage",
-  "version": "0.0.3",
-  "description": "Compact, printable theme for JSON Resume",
-  "author": "Ainsley Chong",
+  "name": "jsonresume-theme-tech",
+  "version": "1.0.0",
+  "description": "A clean, modern JSON Resume theme tailored for tech professionals, senior engineers, and startup founders",
+  "author": "Gaurav Bansal",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage.git"
+    "url": "https://github.com/bgaurav7/jsonresume-theme-tech.git"
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
-    "css": "2.2.x"
+    "handlebars": "^4.7.8",
+    "css": "^3.0.0"
   },
   "bugs": {
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage/issues"
+    "url": "https://github.com/bgaurav7/jsonresume-theme-tech/issues"
   },
-  "homepage": "https://github.com/ainsleychong/jsonresume-theme-onepage",
+  "homepage": "https://github.com/bgaurav7/jsonresume-theme-tech",
   "main": "index.js",
+  "keywords": ["resume", "jsonresume", "theme", "tech", "professional", "ats-friendly"],
   "devDependencies": {}
 }
