@@ -117,7 +117,7 @@
       <div class='projectBlock'>
         <div class='blockHeader'>
           <span class='title'>
-            {{#if url}}<a href='{{url}}'>{{name}} ({{url}})</a>{{else}}{{name}}{{/if}}
+            {{#if url}}<a href='{{url}}'>{{name}} <em>({{url}})</em></a>{{else}}{{name}}{{/if}}
           </span>
           {{#if startDate}}
           <span class='date'>
@@ -153,13 +153,10 @@
       <div class='educationBlock'>
         <div class='blockHeader'>
           <span class='title'>
-            {{#if institution}}{{#if url}}<a href='{{url}}'>{{institution}} - <em>{{#if studyType}}{{studyType}}{{/if}}{{#if area}} ({{area}}){{/if}}</em>{{#if location}}, {{location}}{{/if}}</a>{{else}}{{institution}} - <em>{{#if studyType}}{{studyType}}{{/if}}{{#if area}} ({{area}}){{/if}}</em>{{#if location}}, {{location}}{{/if}}{{/if}}{{/if}}
+            {{#if institution}}{{#if url}}<a href='{{url}}'>{{institution}}{{#if location}}, {{location}}{{/if}}</a>{{else}}{{institution}}{{#if location}}, {{location}}{{/if}}{{/if}}{{/if}}
+            {{#if startDate}}<span class='date'>{{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}</span>{{/if}}
           </span>
-          {{#if startDate}}
-          <span class='date'>
-            {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
-          </span>
-          {{/if}}
+          {{#if studyType}}<div class='degree'><em>{{studyType}}{{#if area}} ({{area}}){{/if}}</em></div>{{/if}}
         </div>
         {{#if gpa}}
         <div class='gpa'>
