@@ -34,6 +34,10 @@ a:hover {
   color: #2077b2;
 }
 
+.normal-weight {
+  font-weight: normal;
+}
+
 /* Resume container */
 .resume {
   margin: 0 auto;
