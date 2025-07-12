@@ -76,7 +76,7 @@
 			<div class="jobBlock">
 	      <div class='blockHeader'>
 	        <span class='title'>
-	          {{#if company}}{{company}}{{/if}}{{#if location}}, {{location}}{{/if}}
+	          {{#if name}}{{#if url}}<a href='{{url}}'>{{name}}</a>{{else}}{{name}}{{/if}}{{/if}}{{#if location}}, {{location}}{{/if}}
 	        </span>
 	        {{#if startDate}}
 	        <span class='date'>
@@ -85,7 +85,7 @@
 	        {{/if}}
 	      </div>
 	      <div class='position'><strong>{{position}}</strong></div>
-	      {{#if website}}<div class='website'><a href='{{website}}'>{{website}}</a></div>{{/if}}
+	      {{#if summary}}<div class='summary'>{{{summary}}}</div>{{/if}}
 	      {{#if highlights.length}}
 	      <ul class='highlights'>
 	        {{#each highlights}}
@@ -105,6 +105,85 @@
       {{/each}}
     </div>
   </div>
+	{{/if}}
+
+  {{#if resume.projects.length}}
+  <div id='projects'>
+    <div class='sectionName'>
+      <span>PROJECTS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      {{#each resume.projects}}
+      <div class='projectBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            {{#if url}}<a href='{{url}}'>{{name}} ({{url}})</a>{{else}}{{name}}{{/if}}
+          </span>
+          {{#if startDate}}
+          <span class='date'>
+            {{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+          </span>
+          {{/if}}
+        </div>
+        {{#if description}}
+        <div class='description'>{{description}}</div>
+        {{/if}}
+        {{#if highlights.length}}
+        <ul class='highlights'>
+          {{#each highlights}}
+          <li>{{.}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+      {{#unless @last}}<div class='separator'></div>{{/unless}}
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
+
+	{{#if resume.education.length}}
+	<div id='education'>
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      {{#each resume.education}}
+      <div class='educationBlock'>
+        <span class='title'>
+          {{#if institution}}{{institution}}{{/if}}{{#if location}}, {{location}}{{/if}}{{#if studyType}}, {{studyType}}{{/if}}
+        </span>
+        {{#if startDate}}
+        <span class='date'>
+          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+        </span>
+        {{/if}}
+        <div class='degree'>
+          <strong>{{#if studyType}}{{studyType}}{{/if}}{{#if area}}, {{area}}{{/if}}</strong>
+        </div>
+        {{#if gpa}}
+        <div class='gpa'>
+          <strong>GPA:</strong> {{gpa}}{{#if gpaMax}}/{{gpaMax}}{{/if}}{{#if summary}} ({{summary}}){{/if}}
+        </div>
+        {{/if}}
+        {{#if courses.length}}
+        <div id='coursesBlock'>
+          {{#each courses}}
+          <ul class='coursesList'>
+            {{#each .}}
+            <li class='course'>{{.}}</li>
+            {{/each}}
+          </ul>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+      {{#unless @last}}<div class='separator'></div>{{/unless}}
+      {{/each}}
+    </div>
+	</div>
 	{{/if}}
 
 	{{#if resume.publications.length}}
@@ -192,55 +271,13 @@
         {{#if website}}
         <div class='website'><a href='{{website}}'>{{website}}</a></div>
         {{/if}}
+        {{#if summary}}<div class='summary'>{{summary}}</div>{{/if}}
         {{#if highlights.length}}
         <ul class='highlights'>
           {{#each highlights}}
           <li>{{.}}</li>
           {{/each}}
         </ul>
-        {{/if}}
-      </div>
-      {{#unless @last}}<div class='separator'></div>{{/unless}}
-      {{/each}}
-    </div>
-	</div>
-	{{/if}}
-
-	{{#if resume.education.length}}
-	<div id='education'>
-    <div class='sectionName'>
-      <span>EDUCATION</span>
-    </div>
-    <div class='sectionLine'></div>
-    <div class='sectionContent'>
-      {{#each resume.education}}
-      <div class='educationBlock'>
-        <span class='title'>
-          {{#if institution}}{{institution}}{{/if}}{{#if location}}, {{location}}{{/if}}{{#if studyType}}, {{studyType}}{{/if}}
-        </span>
-        {{#if startDate}}
-        <span class='date'>
-          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
-        </span>
-        {{/if}}
-        <div class='degree'>
-          <strong>{{#if studyType}}{{studyType}}{{/if}}{{#if area}}, {{area}}{{/if}}</strong>
-        </div>
-        {{#if gpa}}
-        <div class='gpa'>
-          <strong>GPA:</strong> {{gpa}}{{#if gpaMax}}/{{gpaMax}}{{/if}}{{#if summary}} ({{summary}}){{/if}}
-        </div>
-        {{/if}}
-        {{#if courses.length}}
-        <div id='coursesBlock'>
-          {{#each courses}}
-          <ul class='coursesList'>
-            {{#each .}}
-            <li class='course'>{{.}}</li>
-            {{/each}}
-          </ul>
-          {{/each}}
-        </div>
         {{/if}}
       </div>
       {{#unless @last}}<div class='separator'></div>{{/unless}}
@@ -278,6 +315,30 @@
     </div>
 	</div>
 	{{/if}}
+
+  {{#if resume.certificates.length}}
+  <div id='certificates'>
+    <div class='sectionName'>
+      <span>CERTIFICATIONS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      {{#each resume.certificates}}
+      <div class='certificateBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            {{#if url}}<a href='{{url}}'>{{name}} - {{issuer}}</a>{{else}}{{name}} - {{issuer}}{{/if}}
+          </span>
+          {{#if date}}
+          <span class='date'>{{date}}</span>
+          {{/if}}
+        </div>
+      </div>
+      {{#unless @last}}<div class='separator'></div>{{/unless}}
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
 
 	{{#if resume.languages.length}}
 	<div id='languages'>
@@ -318,6 +379,26 @@
       {{/each}}
     </div>
 	</div>
+  {{/if}}
+
+  {{#if resume.references.length}}
+  <div id='references'>
+    <div class='sectionName'>
+      <span>REFERENCES</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      {{#each resume.references}}
+      <div class='referenceBlock'>
+        <div class='name'><strong>{{name}}</strong></div>
+        {{#if reference}}
+        <div class='reference'>"{{reference}}"</div>
+        {{/if}}
+      </div>
+      {{#unless @last}}<div class='separator'></div>{{/unless}}
+      {{/each}}
+    </div>
+  </div>
   {{/if}}
 
 	</body>

@@ -60,7 +60,7 @@ a {
 
 .sectionContent {
   width: 100%;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .sectionContent ul {
@@ -74,18 +74,28 @@ a {
   font-size: 12px;
 }
 
+.sectionContent .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sectionContent .title a:hover {
+  text-decoration: underline;
+  color: #2077b2;
+}
+
 .sectionContent .date {
   float: right;
   font-weight: normal;
 }
 
 .sectionContent .separator {
-  height: 14px;
+  height: 2px;
 }
 
 .sectionLine {
   border-bottom: 1px solid #999;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   width: 100%;
 }
 
@@ -97,6 +107,8 @@ a {
 
 .summary {
   margin-top: 6px;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .skillBlock {
@@ -122,7 +134,17 @@ a {
 
 .website {
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.website a {
+  color: #2077b2;
+  text-decoration: none;
+}
+
+.website a:hover {
+  text-decoration: underline;
 }
 
 .degree {

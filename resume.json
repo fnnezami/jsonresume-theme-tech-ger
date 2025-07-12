@@ -32,7 +32,7 @@
       "name": "TechNova",
       "position": "Co-founder & CTO",
       "url": "https://technova.example.com",
-      "startDate": "2019-06-01",
+      "startDate": "2019",
       "endDate": "",
       "summary": "Co-founded TechNova to revolutionize enterprise data management through AI-powered automation and analytics. Lead all technical strategy, architecture decisions, and engineering teams.",
       "highlights": [
@@ -46,8 +46,8 @@
       "name": "DataSphere",
       "position": "VP of Engineering",
       "url": "https://datasphere.example.com",
-      "startDate": "2016-03-01",
-      "endDate": "2019-05-01",
+      "startDate": "2016",
+      "endDate": "2019",
       "summary": "Led engineering for enterprise data platform serving Fortune 500 clients, focusing on scalable architecture and performance optimization.",
       "highlights": [
         "Managed team of 25 engineers across backend, frontend, and DevOps",
@@ -60,8 +60,8 @@
       "name": "CloudMatrix",
       "position": "Senior Software Engineer",
       "url": "https://cloudmatrix.example.com",
-      "startDate": "2013-01-01",
-      "endDate": "2016-02-01",
+      "startDate": "2013",
+      "endDate": "2016",
       "summary": "Developed distributed systems for cloud infrastructure management and monitoring.",
       "highlights": [
         "Built real-time monitoring system for multi-region cloud deployments",
@@ -76,7 +76,7 @@
       "organization": "Code For Change",
       "position": "Technical Mentor",
       "url": "https://codeforchange.example.org",
-      "startDate": "2020-01-01",
+      "startDate": "2020",
       "endDate": "",
       "summary": "Mentor aspiring developers from underrepresented communities, providing technical guidance and career advice.",
       "highlights": [
@@ -92,8 +92,8 @@
       "url": "https://stanford.edu",
       "area": "Computer Science",
       "studyType": "Master of Science (M.S.)",
-      "startDate": "2010-09-01",
-      "endDate": "2012-06-01",
+      "startDate": "2010",
+      "endDate": "2012",
       "score": "3.9",
       "courses": [
         "Distributed Systems",
@@ -107,8 +107,8 @@
       "url": "https://iitb.ac.in",
       "area": "Computer Science and Engineering",
       "studyType": "Bachelor of Technology (B.Tech.)",
-      "startDate": "2006-08-01",
-      "endDate": "2010-05-01",
+      "startDate": "2006",
+      "endDate": "2010",
       "score": "9.2/10",
       "courses": [
         "Data Structures and Algorithms",
@@ -121,13 +121,13 @@
   "awards": [
     {
       "title": "Technology Innovator of the Year",
-      "date": "2023-11-01",
+      "date": "2023",
       "awarder": "Tech Founders Association",
       "summary": "Recognized for pioneering work in enterprise data automation and ML Ops."
     },
     {
       "title": "Best Enterprise SaaS Platform",
-      "date": "2022-05-01",
+      "date": "2022",
       "awarder": "Cloud Computing Awards",
       "summary": "TechNova's data platform recognized for innovation, scalability, and business impact."
     }
@@ -135,13 +135,13 @@
   "certificates": [
     {
       "name": "AWS Solutions Architect - Professional",
-      "date": "2021-06-15",
+      "date": "2021",
       "issuer": "Amazon Web Services",
       "url": "https://aws.amazon.com/certification"
     },
     {
       "name": "Google Cloud Professional Data Engineer",
-      "date": "2020-03-10",
+      "date": "2020",
       "issuer": "Google Cloud",
       "url": "https://cloud.google.com/certification"
     }
@@ -150,7 +150,7 @@
     {
       "name": "Scalable ML Pipelines for Enterprise: Lessons from the Trenches",
       "publisher": "ACM Digital Library",
-      "releaseDate": "2022-09-01",
+      "releaseDate": "2022",
       "url": "https://dl.acm.org/example",
       "summary": "Research paper detailing best practices for implementing production ML pipelines in enterprise environments."
     }
@@ -209,7 +209,7 @@
   "projects": [
     {
       "name": "DataFlow",
-      "startDate": "2021-03-01",
+      "startDate": "2021",
       "endDate": "",
       "description": "TechNova's flagship enterprise data platform that enables real-time data processing, analytics, and ML model deployment with minimal engineering overhead.",
       "highlights": [
@@ -222,8 +222,8 @@
     },
     {
       "name": "AutoML Engine",
-      "startDate": "2020-01-01",
-      "endDate": "2021-02-01",
+      "startDate": "2020",
+      "endDate": "2021",
       "description": "An open-source framework for automated machine learning model selection, training, and deployment that democratizes AI for organizations without dedicated data science teams.",
       "highlights": [
         "5,000+ GitHub stars and 50+ contributors",

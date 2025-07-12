@@ -42,10 +42,7 @@ function render(resume) {
         if (block.highlights === undefined) {
           block.highlights = [];
         }
-        if (block.summary) {
-          block.highlights.unshift(block.summary);
-          delete block.summary;
-        }
+        // Don't add summary to highlights or delete it
       });
     }
   });
