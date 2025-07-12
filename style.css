@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   background: #EEEEEE;
   font: 12px "Times New Roman", Times, serif;
@@ -5,23 +6,29 @@ body {
   margin: 40px 0;
   color: #000;
 }
+
 em {
   color: #333;
   font-style: italic;
 }
+
 p {
   line-height: 1.4;
 }
+
 ul {
   margin-bottom: 0;
 }
+
 li {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
+
 a {
   text-decoration: none;
 }
 
+/* Resume container */
 #resume {
   margin: 0 auto;
   max-width: 800px;
@@ -32,24 +39,7 @@ a {
   -webkit-box-shadow: 2px 2px 4px #aaa;
 }
 
-.coursesList {
-  width: 28%;
-  vertical-align: top;
-  display: inline-block;
-}
-
-.largeFont {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.smallFont {
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
+/* Section styling */
 .sectionName {
   text-align: left;
   font-weight: bold;
@@ -58,78 +48,56 @@ a {
   margin-bottom: 2px;
 }
 
-.sectionContent {
-  width: 100%;
-  margin-top: 6px;
-}
-
-.sectionContent ul {
-  padding-left: 20px;
-  margin-top: 6px;
-  list-style-type: disc;
-}
-
-.sectionContent .title {
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.sectionContent .title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.sectionContent .title a:hover {
-  text-decoration: underline;
-  color: #2077b2;
-}
-
-.sectionContent .date {
-  float: right;
-  font-weight: normal;
-}
-
-.sectionContent .separator {
-  height: 2px;
-}
-
 .sectionLine {
   border-bottom: 1px solid #999;
   margin-bottom: 8px;
   width: 100%;
 }
 
-.divider {
-  font-weight: bold;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.summary {
+.sectionContent {
+  width: 100%;
   margin-top: 6px;
-  margin-bottom: 8px;
-  line-height: 1.5;
 }
 
-.skillBlock {
-  margin-bottom: 10px;
+/* Add spacing after each section except the last one */
+#resume > div:not(:last-child) {
+  margin-bottom: 15px;
 }
 
-.skillList, .skillDetails {
-  margin-top: 2px;
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.skillList li, .skillDetails li {
-  display: inline-block;
-  margin-right: 15px;
-  margin-bottom: 5px;
-}
-
-.position {
-  margin-top: 2px;
+/* Common block elements */
+.jobBlock, .projectBlock, .educationBlock, .certificateBlock, .skillBlock, .publicationBlock, .awardBlock, .volunteerBlock, .languageBlock, .interestBlock {
+  page-break-inside: avoid;
   margin-bottom: 4px;
+}
+
+/* Common content elements */
+.blockHeader {
+  margin-bottom: 2px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
+  color: #2077b2;
+}
+
+.date {
+  float: right;
+  font-weight: normal;
+}
+
+.position, .degree {
+  margin-top: 1px;
+  margin-bottom: 2px;
 }
 
 .website {
@@ -147,9 +115,81 @@ a {
   text-decoration: underline;
 }
 
-.degree {
+.summary {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* Lists */
+.sectionContent ul {
+  padding-left: 20px;
   margin-top: 2px;
   margin-bottom: 2px;
+  list-style-type: disc;
+}
+
+.skillList, .skillDetails {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.skillList li, .skillDetails li {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 1px;
+}
+
+/* Separators */
+.separator {
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Special elements */
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.course {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.largeFont {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.label {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.smallFont {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .gpa {
