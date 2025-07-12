@@ -37,8 +37,8 @@ a:hover {
 /* Resume container */
 .resume {
   margin: 0 auto;
-  max-width: 800px;
-  padding: 40px 60px;
+  max-width: 650px;
+  padding: 40px 30px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px #aaa;
@@ -218,7 +218,7 @@ a:hover {
   }
   .resume {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 650px;
     padding: 0px 0px;
     border: 0px;
     background: #fff;
