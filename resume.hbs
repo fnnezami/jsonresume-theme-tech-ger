@@ -31,11 +31,11 @@
       {{/location}}
       {{#if phone}}
       <span class='divider'>•</span>
-      <span class='phone'>Phone: {{phone}}</span>
+      <span class='phone'>Telefon: {{phone}}</span>
       {{/if}}
       {{#if email}}
       <span class='divider'>•</span>
-      <span class='email'>Email: {{email}}</span>
+      <span class='email'>E-Mail: {{email}}</span>
       {{/if}}
     </div>
     {{#if profiles.length}}
@@ -56,7 +56,7 @@
   {{#if resume.basics.summary}}
   <div class='summaryBlock'>
     <div class='sectionName'>
-      <span>SUMMARY</span>
+      <span>ZUSAMMENFASSUNG</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -68,7 +68,7 @@
 	{{#if resume.work.length}}
   <div class='workBlock'>
     <div class='sectionName'>
-      <span>EXPERIENCE</span>
+      <span>BERUFSERFAHRUNG</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -80,7 +80,7 @@
 	        </span>
 	        {{#if startDate}}
 	        <span class='date'>
-	          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+	          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Heute{{/if}}
 	        </span>
 	        {{/if}}
 	      </div>
@@ -109,7 +109,7 @@
   {{#if resume.projects.length}}
   <div class='projects'>
     <div class='sectionName'>
-      <span>PROJECTS</span>
+      <span>PROJEKTE</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -121,7 +121,7 @@
           </span>
           {{#if startDate}}
           <span class='date'>
-            {{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+            {{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Heute{{/if}}
           </span>
           {{/if}}
         </div>
@@ -145,7 +145,7 @@
 	{{#if resume.education.length}}
 	<div class='education'>
     <div class='sectionName'>
-      <span>EDUCATION</span>
+      <span>AUSBILDUNG</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -154,13 +154,13 @@
         <div class='blockHeader'>
           <span class='title'>
             {{#if institution}}{{#if url}}<a href='{{url}}'>{{institution}}{{#if location}}, {{location}}{{/if}}</a>{{else}}{{institution}}{{#if location}}, {{location}}{{/if}}{{/if}}{{/if}}
-            {{#if startDate}}<span class='date'>{{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}</span>{{/if}}
+            {{#if startDate}}<span class='date'>{{startDate}} &mdash; {{#if endDate}}{{endDate}}{{else}}Heute{{/if}}</span>{{/if}}
           </span>
           {{#if studyType}}<div class='degree'><em>{{studyType}}{{#if area}} ({{area}}){{/if}}</em></div>{{/if}}
         </div>
         {{#if gpa}}
         <div class='gpa'>
-          <strong>GPA:</strong> {{gpa}}{{#if gpaMax}}/{{gpaMax}}{{/if}}{{#if summary}} ({{summary}}){{/if}}
+          <strong>Durchschnittsnote:</strong> {{gpa}}{{#if gpaMax}}/{{gpaMax}}{{/if}}{{#if summary}} ({{summary}})</{{/if}}
         </div>
         {{/if}}
         {{#if courses.length}}
@@ -184,7 +184,7 @@
 	{{#if resume.publications.length}}
 	<div class='publications'>
     <div class='sectionName'>
-      <span>PUBLICATIONS</span>
+      <span>PUBLIKATIONEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -217,7 +217,7 @@
 	{{#if resume.awards.length}}
 	<div class='awards'>
     <div class='sectionName'>
-      <span>AWARDS</span>
+      <span>AUSZEICHNUNGEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -250,7 +250,7 @@
 	{{#if resume.volunteer.length}}
 	<div class='volunteer'>
     <div class='sectionName'>
-      <span>VOLUNTEERING</span>
+      <span>EHRENAMT</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -262,7 +262,7 @@
           </span>
           {{#if startDate}}
           <span class='date'>
-            {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+            {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Heute{{/if}}
           </span>
           {{/if}}
         </div>
@@ -285,7 +285,7 @@
 	{{#if resume.skills.length}}
 	<div class='skills'>
     <div class='sectionName'>
-      <span>SKILLS</span>
+      <span>FÄHIGKEITEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -315,7 +315,7 @@
   {{#if resume.certificates.length}}
   <div class='certificates'>
     <div class='sectionName'>
-      <span>CERTIFICATIONS</span>
+      <span>ZERTIFIKATE</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -339,7 +339,7 @@
 	{{#if resume.languages.length}}
 	<div class='languages'>
     <div class='sectionName'>
-      <span>LANGUAGES</span>
+      <span>SPRACHEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -359,7 +359,7 @@
 	{{#if resume.interests.length}}
 	<div class='interests'>
     <div class='sectionName'>
-      <span>INTERESTS</span>
+      <span>INTERESSEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
@@ -384,7 +384,7 @@
   {{#if resume.references.length}}
   <div class='references'>
     <div class='sectionName'>
-      <span>REFERENCES</span>
+      <span>REFERENZEN</span>
     </div>
     <div class='sectionLine'></div>
     <div class='sectionContent'>
